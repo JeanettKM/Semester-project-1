@@ -5,31 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="Exploria, Explore our Exhibitions" />
-    <title>Exploria - Explore our Exhibitions</title>
+    <title>Exploria | Explore our Exhibitions</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <a href="index.html"> Exploria</a>
-      <nav>
-        <ul>
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="Explore.html"> Explore our Exhibitions</a></li>
-          <li><a href="Events.html"> Events</a></li>
-          <li><a href="involved.html"> Get Involved</a></li>
-          <li><a href="Tickets.html"> Tickets</a></li>
+      <nav class="Navigation">
+        <a href="index.html" class="logo"> Exploria</a>
+        <ul class="Navflex">
+          <div class="listitems">
+            <li><a href="index.html"> Home</a></li>
+            <li>
+              <a href="Explore.html" class="active"> Explore our Exhibitions</a>
+            </li>
+            <li><a href="Events.html"> Events</a></li>
+            <li><a href="involved.html"> Get Involved</a></li>
+            <li><a href="Tickets.html"> Tickets</a></li>
+          </div>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Explore our exhibitons</h1>
+    <main class="explorepage">
+      <h1 class="toptext">Explore our exhibitons</h1>
       <section>
-        <img src="images/jesse-orrico-60373.jpg" />
-        <img src="images/skeleton-414543_1920.jpg" />
+        <img
+          class="headpic"
+          src="images/jesse-orrico-60373.jpg"
+          alt="Picture of a replica of a human head"
+        />
+        <img
+          class="skeletonpic"
+          src="images/skeleton-414543_1920.jpg"
+          alt="Picture of three different skeletons showing the evolution"
+        />
       </section>
-      <section>
-        <div>
-          <p>Biology and medicin</p>
+      <section class="expbioandevo">
+        <div class="textmargin">
+          <p class="exptoptext">Biology and medicin</p>
           <p>
             From micro-organisms to the human body, major breakthroughs in
             biology are offering us unique insights into the great wonders of
@@ -43,8 +56,8 @@
             Often our fellow creatures have beat us to it.
           </p>
         </div>
-        <div>
-          <p>Evolution</p>
+        <div class="textmargin">
+          <p class="exptoptext">Evolution</p>
           <p>
             For centuries, philosophers and scientists have wrestled with the
             question of our origins. Where do we come from and how did we get
@@ -57,9 +70,9 @@
           </p>
         </div>
       </section>
-      <section>
-        <h2>Cosmology</h2>
-        <p>
+      <section class="cosmopic">
+        <h2 class="exptoptext">Cosmology</h2>
+        <p class="expcosmo">
           Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky
           Above Us’, explores the night sky and what we can see and know about
           the universe around us. We’ll locate the various constellations and
@@ -68,11 +81,10 @@
           exploration: from early Arab traders, to Galileo’s telescope, to the
           latest exploration of the planets in our solar system.
         </p>
-        <img src="images/celso-405219.jpg" />
       </section>
       <section>
-        <div>
-          <p>Robotics and AI</p>
+        <div class="exprobotics">
+          <p class="exptoptext">Robotics and AI</p>
           <p>
             The information revolution is here and robotics and artificial
             intelligence are the science of the future. From useful home
@@ -80,8 +92,8 @@
             here. You can even say hello and shake the hand of Rob the Robot.
           </p>
         </div>
-        <div>
-          <p>Ecology</p>
+        <div class="expecology">
+          <p class="exptoptext">Ecology</p>
           <p>
             As we learn more and more of the impact humans are having on the
             planet, the more important it becomes that scientists explore how to
@@ -91,66 +103,99 @@
         </div>
       </section>
       <section>
-        <img src="images/samuel-zeller-113381.jpg" />
-        <img src="images/samuel-zeller-158996.jpg" />
-        <img src="images/reading-2762010_1280.jpg" />
+        <img
+          src="images/samuel-zeller-113381.jpg"
+          alt=" Picture of a medical plastic version of our body"
+        />
+        <img
+          src="images/samuel-zeller-158996.jpg"
+          alt=" picture Child looking through VR glasses connected to a phone"
+        />
+        <img
+          src="images/reading-2762010_1280.jpg"
+          alt=" Picture of a child reading a magazing, sitting on top of books"
+        />
       </section>
     </main>
     <footer>
-      <section>
-        <a href="index.html"> Exploria</a>
-        <div>
-          <iconify-icon icon="material-symbols:location-on"></iconify-icon>
-          <a href="https://goo.gl/maps/DkwvVLoqJ7tQAwJw6"
-            >Wilhelmsmyrvegen 7D 7088 Heimdal</a
-          >
-        </div>
-        <div>
-          <iconify-icon icon="ic:baseline-phone-iphone"></iconify-icon>
-          <p>+47 47474747</p>
-        </div>
-        <div>
-          <iconify-icon icon="material-symbols:mail-rounded"></iconify-icon>
-          <p>Contact@Exploria.com</p>
-        </div>
-        <div>
-          <a href="https://www.facebook.com/">
-            <iconify-icon icon="ic:baseline-facebook"></iconify-icon
-          ></a>
-          <a href="https://www.twitter.com/">
-            <iconify-icon icon="teenyicons:twitter-solid"></iconify-icon
-          ></a>
-          <a href="https://www.instagram.com/">
-            <iconify-icon icon="typcn:social-instagram"></iconify-icon
-          ></a>
-        </div>
-      </section>
-      <section>
-        <p>Opening hours</p>
+      <div class="flexfooter">
+        <section class="flexfootertext footercontact">
+          <a href="index.html" class="logo"> Exploria</a>
+          <div class="footercontact">
+              <iconify-icon
+                icon="material-symbols:location-on"
+                class="footericons"
+              ></iconify-icon
+              >Wilhelmsmyrvegen 7D 7088 Heimdal</a
+            >
+          </div>
+          <div>
+            <p>
+              <iconify-icon
+                icon="ic:baseline-phone-iphone"
+                class="footericons"
+              ></iconify-icon>
+              +47 47474747
+            </p>
+          </div>
+          <div>
+            <p>
+              <iconify-icon
+                icon="material-symbols:mail-rounded"
+                class="footericons"
+              ></iconify-icon>
+              Contact@Exploria.com
+            </p>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/">
+              <iconify-icon
+                icon="ic:baseline-facebook"
+                class="footericons"
+              ></iconify-icon
+            ></a>
+            <a href="https://www.twitter.com/">
+              <iconify-icon
+                icon="teenyicons:twitter-solid"
+                class="footericons"
+              ></iconify-icon
+            ></a>
+            <a href="https://www.instagram.com/">
+              <iconify-icon
+                icon="typcn:social-instagram"
+                class="footericons"
+              ></iconify-icon
+            ></a>
+          </div>
+        </section>
+        <section class="flexfootertext">
+          <p class="footertext footertext2">Opening hours</p>
+          <p>
+            Monday: Closed Tuesday: 10:00 - 16:00 Wednesday: 10:00 - 16:00
+            Thursday: 10:00 - 16:00 Friday: 10:00 - 19:00 Saturday: 09:00 -
+            16:00 Sunday: 09:00 - 13:00
+          </p>
+          <p>The entrance is free for all. Click to order tickets</p>
+          <p>
+            There are guided tours of the museum that leave every hour. These
+            tours are 70 NOK per person and include a handy printed guide of the
+            museum.
+          </p>
+        </section>
+        <section class="flexfootertext">
+          <p class="footertext footertext2">About us</p>
+          <p>
+            We recently opened up at Heimdal, our goal is to provide and
+            intreague exploration and imagination for everyone. We have alot of
+            exciting events and exhibitions to offer. Take a look at our page to
+            check whats available today.
+          </p>
+        </section>
+      </div>
+      <section class="footeralign">
         <p>
-          Monday: Closed Tuesday: 10:00 - 16:00 Wednesday: 10:00 - 16:00
-          Thursday: 10:00 - 16:00 Friday: 10:00 - 19:00 Saturday: 09:00 - 16:00
-          Sunday: 09:00 - 13:00
+          <iconify-icon icon="bi:cc-circle-fill"></iconify-icon> Exploria 2022
         </p>
-        <p>The entrance is free for all. Click to order tickets</p>
-        <p>
-          There are guided tours of the museum that leave every hour. These
-          tours are 70 NOK per person and include a handy printed guide of the
-          museum.
-        </p>
-      </section>
-      <section>
-        <p>About us</p>
-        <p>
-          We recently opened up at Heimdal, our goal is to provide and intreague
-          exploration and imagination for everyone. We have alot of exciting
-          events and exhibitions to offer. Take a look at our page to check
-          whats available today.
-        </p>
-      </section>
-      <section>
-        <iconify-icon icon="bi:cc-circle-fill"></iconify-icon>
-        <p>Exploria 2022</p>
       </section>
     </footer>
   </body>

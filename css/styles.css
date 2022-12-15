@@ -1,0 +1,400 @@
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Zen dots";
+    src: url("/fonts/Zen_Dots/ZenDots-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: "cairo", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+header, footer {
+    background-color: #FFFFFF;
+}
+
+.logo {
+    color: #363636;
+    font-size:xx-large;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.toptext {
+    background-color: #770040;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Navigaiton Specific */
+.Navigation {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.listitems {
+    display: flex;
+    gap: 1em;
+    font-size: 17px;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+.listitems li {
+    padding: 0px 20px;
+}
+
+
+h1 {
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+/*Footer specific*/
+
+.footeralign {
+    text-align: center;
+}
+
+.footericons {
+    color: #770040;
+}
+.footertext {
+    color: #770040;
+}
+
+.flexfooter {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.flexfootertext {
+ flex: 2;
+ align-items: center;
+margin: 30px;
+ text-align:justify;
+}
+
+.footertext2 {
+    text-align: center;
+}
+
+.footercontact {
+    bottom: 70px;
+}
+
+
+
+
+
+
+/*Home page*/
+
+.flexbox1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.flextext1 {
+flex: auto;
+align-items: center;
+}
+
+.flexbox2 {
+ display: flex;
+ flex-direction: row;
+}
+
+.flextext2 {
+    flex: auto;
+    margin: 20px;
+}
+
+.vrpic {
+    background-image: url("../images/billetto-editorial-334686.jpg");
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+.labpic {
+    background-image: url("../images/lab-512503_1920.jpg");
+    min-height: 12vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:0px;
+}
+
+
+.HPH1 {
+    background-color: #770040 ;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.HPH2 {
+    color: #770040;
+    text-transform: uppercase;
+}
+
+.HPBACKGROUND {
+    background-color: #770040;
+}
+
+.HPMAIN1 {
+    background-color: #770040 ;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.HPMAIN2 {
+    background-color: #770040 ;
+    color: white;
+    padding: 20px;
+}
+
+.Pictectposition {
+    position: absolute;
+    left: 7%;
+    bottom: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Explore exhibitions Page*/
+
+.cosmopic {
+    background-image: url("../images/celso-405219.jpg");
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.headpic {
+    max-height: 22vh;
+    min-width: 60vh;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+.skeletonpic {
+    max-height: 22vh;
+    min-width: 60vh;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.explorepage {
+    background-color: #0E0E0C;
+}
+
+.textmargin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.exptoptext {
+    font-family: "zen dots";
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.expbioandevo {
+    background-color: #B59115;
+    color: white;
+    display: inline-flex;
+}
+
+.expcosmo {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.exprobotics {
+    background-color: #770040;
+    color: white;
+}
+
+.expecology {
+    background-color: #005C41;
+    color: white;
+}
+
+
+
+
+
+
+
+/* Events page */
+
+.eventbackground {
+    background-color: #490028;
+    color: white;
+}
+
+.eventtext {
+    background-color: #57002F;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.Aeropic {
+    max-height: 20vh;
+    min-width: 60vh;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+.Energeticapic {
+    max-height: 20vh;
+    min-width: 60vh;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+.nightmuseumpic {
+    max-height: 60vh;
+    min-width: 40vh;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Get incvolved page */
+
+.museumpic {
+    max-height: 25vh;
+    border-radius: 50%;
+}
+
+.supporttoptext {
+    background-color: #004E37;
+    color: white;
+    text-align: center;
+}
+
+.supportbottext {
+    background-color: #005C41;
+    color: white;
+    text-align: center;
+}
+
+.volunteertoptext {
+    background-color: #B59115;
+    color: white;
+    text-align: center;
+}
+
+.volunteerbottext {
+    background-color: #B59115;
+    color: white;
+    text-align: center;
+}
+
+.internshiptoptext {
+    background-color: #490028;
+    color: white;
+    text-align: center;
+}
+
+.internshipbottext {
+    background-color: #57002F;
+    color: white;
+    text-align: center;
+}
+
+.orderbutton {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #B59115;
+
+}
+
+
+
+
+
+
+
+
+/* Tickets Page */
+
+.ticketbackground {
+    background-color: #490028;
+    color: white;
+    text-align: center;
+}
+
+.formbackground {
+    background-color: #3C0020;
+    color: white;
+    text-align: center;
+}
+
