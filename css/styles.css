@@ -36,6 +36,11 @@ a {
     color: white;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.smalltext1{
+    font-size: 12px;
 }
 
 
@@ -111,9 +116,6 @@ margin: 30px;
     text-align: center;
 }
 
-.footercontact {
-    bottom: 70px;
-}
 
 
 
@@ -131,17 +133,19 @@ margin: 30px;
 }
 
 .flextext1 {
-flex: auto;
+flex: 1;
 align-items: center;
+min-width: 400px;
 }
 
-.flexbox2 {
+.flexbox2hp {
  display: flex;
  flex-direction: row;
+ flex-flow: row;
 }
 
 .flextext2 {
-    flex: auto;
+    flex: 1;
     margin: 20px;
 }
 
@@ -211,6 +215,20 @@ align-items: center;
 
 /* Explore exhibitions Page*/
 
+.backgroundexp {
+    background-color: #B59115;
+}
+.flextboxex1 {
+    flex: 1;
+}
+
+.h1exp {
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px; 
+}
+
 .cosmopic {
     background-image: url("../images/celso-405219.jpg");
     min-height: 40vh;
@@ -224,7 +242,7 @@ align-items: center;
     min-width: 60vh;
     border-radius: 5px;
     object-fit: cover;
-    margin-left: 50px;
+    padding: 10px;
 }
 
 .skeletonpic {
@@ -232,6 +250,7 @@ align-items: center;
     min-width: 60vh;
     border-radius: 5px;
     object-fit: cover;
+    padding: 10px;
 }
 
 .explorepage {
@@ -241,6 +260,18 @@ align-items: center;
 .textmargin {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.paddingyellow1 {
+    max-width: 700px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.paddingyellow2 {
+    max-width: 700px;
+    margin-left: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -254,24 +285,65 @@ align-items: center;
 .expbioandevo {
     background-color: #B59115;
     color: white;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
 }
 
 .expcosmo {
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.cosmoheader {
+    padding: 30px;
 }
 
 .exprobotics {
     background-color: #770040;
     color: white;
+    padding: 15px;
+    flex: 2;
+    margin: 20px;
+    border-radius: 5px;;
+    min-width: 180px;
 }
 
 .expecology {
     background-color: #005C41;
     color: white;
+    padding:15px;
+    flex: 2;
+    margin: 20px;
+    border-radius: 5px;
+    min-width: 180px;
 }
+
+
+.flexbox2 {
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+.toppicheight {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    flex-flow: wrap;
+
+}
+
+.bottompicheight {
+    max-height: 40vh;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+
 
 
 
@@ -280,6 +352,33 @@ align-items: center;
 
 
 /* Events page */
+
+.headerbackground{
+    background-color: #57002F;
+}
+
+.h1event {
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.flexboxevent {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.boxwidth {
+    width: 900px;
+    margin: 10px;
+    text-align: center;
+}
+
 
 .eventbackground {
     background-color: #490028;
@@ -317,6 +416,49 @@ align-items: center;
     margin-left: 50px;
 }
 
+.museumpic {
+    max-height: 25vh;
+    border-radius: 50%;
+}
+
+
+.container {
+    width: 900px;
+    height: 400px;
+    position: relative;
+    margin: 20px 20px 240px auto;
+
+}
+
+.container img {
+    width: auto;
+    Height: 600px;
+    border-radius: 5px;
+
+}
+
+.bigtext {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.textpositioning {
+    color: #FFFFFF;
+    font-size: 11px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 370px;
+
+}
+
+.textpositioning2 {
+    width: 300px;
+    text-align: left;
+}
+
 
 
 
@@ -328,9 +470,52 @@ align-items: center;
 
 /* Get incvolved page */
 
-.museumpic {
-    max-height: 25vh;
-    border-radius: 50%;
+.h1involved {
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.circlepic {
+    position: absolute;
+}
+
+
+.flextevent {
+    display: flex;
+    flex-flow: column;
+}
+
+
+.headertextbox {
+    margin: 0px;
+    padding: 1px;
+}
+
+.subtextbox {
+    margin: 0px;
+    padding:30px;
+    font-size: 12px;
+}
+
+.smalltext {
+    max-width: 750px;
+}
+
+.supportbackground {
+    background-color: #005C41;
+
+}
+
+.volunteerbackground {
+    background-color: #B59115;
+}
+
+.internshipbackground {
+    background-color: #57002F;
+    
+
 }
 
 .supporttoptext {
@@ -343,6 +528,7 @@ align-items: center;
     background-color: #005C41;
     color: white;
     text-align: center;
+    align-self: center;
 }
 
 .volunteertoptext {
@@ -355,6 +541,7 @@ align-items: center;
     background-color: #B59115;
     color: white;
     text-align: center;
+    align-self: center;
 }
 
 .internshiptoptext {
@@ -367,6 +554,7 @@ align-items: center;
     background-color: #57002F;
     color: white;
     text-align: center;
+    align-self: center;
 }
 
 .orderbutton {
@@ -386,6 +574,12 @@ align-items: center;
 
 /* Tickets Page */
 
+.h1ticket {
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .ticketbackground {
     background-color: #490028;
     color: white;
@@ -396,5 +590,70 @@ align-items: center;
     background-color: #3C0020;
     color: white;
     text-align: center;
+    padding: 2px;
 }
 
+
+.formflextconteiner {
+    display: flex;
+    gap: 20px;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.formsizer {
+    max-width: 600px;
+    display: inline-block;
+    block-size: 430px;
+}
+
+.CTA-tickets {
+    color: white;
+    background-color: #B59115;
+    padding: 8px 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: #B59115;
+    margin: 30px;
+}
+ßß
+input, textarea {
+    padding: 6px;
+    background-color: #ffffff;
+    color: #3C0020;
+    border: #3C0020;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/** ORDER CONFIRMED **/
+
+.h1torder {
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.orderconfirmedtext {
+    max-width: 700px;
+    display: inline-block;
+    block-size: 600px;
+    padding: 50px;
+
+}
+
+.nomargin {
+    padding-top: 30px;
+    margin: 0px;
+}
