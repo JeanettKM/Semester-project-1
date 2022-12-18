@@ -228,7 +228,7 @@ h1 {
     flex-direction: row;
 }
 
-@media (min-width: 300px) and (max-width: 880px) {
+@media (min-width: 100px) and (max-width: 880px) {
     .flexfooter {
         display: flex;
         flex-direction: column;
