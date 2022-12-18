@@ -4,32 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Exploria, order tickets" />
+    <meta name="Description" content="Exploria, order tickets for a great day!" />
     <title>Exploria | Tickets</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
-      <nav class="Navigation">
-        <a href="index.html" class="logo"> Exploria</a>
-        <ul class="Navflex">
-          <div class="listitems">
-            <li><a href="index.html"> Home</a></li>
-            <li><a href="Explore.html"> Explore our Exhibitions</a></li>
-            <li><a href="Events.html"> Events</a></li>
-            <li><a href="involved.html"> Get Involved</a></li>
-            <li><a href="Tickets.html" class="active"> Tickets</a></li>
-          </div>
+      <nav>
+        <ul class="navigationbar">
+          <li><a class="logo" href="index.html"> Exploria</a></li>
+          <input type="checkbox" id="burgermenu">
+          <span class="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Explore.html">Explore our Exhibitions</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="involved.html">Get Involved</a></li>
+            <li><a href="Tickets.html">Tickets</a></li>
+            <label for="burgermenu" class="closed"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="burgermenu" class="open"><i class="fas fa-bars"></i></label>
         </ul>
       </nav>
     </header>
     <main class="ticketbackground">
       <section class="toptext h1ticket">
-        <h1>Tickets</h1>
+        <h1 class="headerlight">Tickets</h1>
       </section>
       <section class="formbackground">
-        <p>Order your free tickets and book your preferred date here</p>
+        <p class="headerlight">Order your free tickets and book your preferred date here</p>
       </section>
       <seciton class="formsizer">
         <form class="formflextconteiner">
@@ -84,20 +88,23 @@
     <footer>
       <div class="flexfooter">
         <section class="flexfootertext footercontact">
-          <a href="index.html" class="logo"> Exploria</a>
+          <a class="logo" href="index.html"> Exploria</a>
           <div class="footercontact">
-              <iconify-icon
-                icon="material-symbols:location-on"
-                class="footericons"
-              ></iconify-icon
-              >Wilhelmsmyrvegen 7D 7088 Heimdal</a
-            >
+            <br>
+            <a href="https://goo.gl/maps/rHiDx41RtaM124YX9">  <iconify-icon
+              icon="material-symbols:location-on"
+              class="footericons footericongap1"
+              alt="Our adress"
+            ></iconify-icon
+            >Wilhelmsmyrvegen 7D 7088 Heimdal</a
+          ></a>
           </div>
           <div>
             <p>
               <iconify-icon
                 icon="ic:baseline-phone-iphone"
-                class="footericons"
+                class="footericons footericongap1"
+                alt="contact via Phone"
               ></iconify-icon>
               +47 47474747
             </p>
@@ -106,47 +113,53 @@
             <p>
               <iconify-icon
                 icon="material-symbols:mail-rounded"
-                class="footericons"
+                class="footericons footericongap1"
+                alt="contact via Mail"
               ></iconify-icon>
               Contact@Exploria.com
             </p>
           </div>
+          <br>
           <div>
-            <a href="https://www.facebook.com/">
+            <a class="footericongap" href="https://www.facebook.com/">
               <iconify-icon
                 icon="ic:baseline-facebook"
                 class="footericons"
+                alt="Link to facebook"
               ></iconify-icon
             ></a>
-            <a href="https://www.twitter.com/">
+            <a class="footericongap" href="https://www.twitter.com/">
               <iconify-icon
                 icon="teenyicons:twitter-solid"
                 class="footericons"
+                alt="Link to Twitter"
               ></iconify-icon
             ></a>
-            <a href="https://www.instagram.com/">
+            <a class="footericongap" href="https://www.instagram.com/" alt>
               <iconify-icon
                 icon="typcn:social-instagram"
                 class="footericons"
+                alt="Link to Instagram"
               ></iconify-icon
             ></a>
           </div>
         </section>
-        <section class="flexfootertext">
+        <section class="footertext1 flexfootertext">
           <p class="footertext footertext2">Opening hours</p>
           <p>
             Monday: Closed Tuesday: 10:00 - 16:00 Wednesday: 10:00 - 16:00
             Thursday: 10:00 - 16:00 Friday: 10:00 - 19:00 Saturday: 09:00 -
             16:00 Sunday: 09:00 - 13:00
           </p>
-          <p>The entrance is free for all. Click to order tickets</p>
+          <br>
+          <p>The entrance is free for all. <a class="clicktext" href="Tickets.html">Click to order tickets</a></p>
           <p>
             There are guided tours of the museum that leave every hour. These
             tours are 70 NOK per person and include a handy printed guide of the
             museum.
           </p>
         </section>
-        <section class="flexfootertext">
+        <section class="footertext1 flexfootertext">
           <p class="footertext footertext2">About us</p>
           <p>
             We recently opened up at Heimdal, our goal is to provide and

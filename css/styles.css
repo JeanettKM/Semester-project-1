@@ -11,6 +11,11 @@
 body {
     font-family: "cairo", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
+
+    min-width: 360px;
+
+    --color1: #FFF;
+    --color2: #000;
 }
 
 header, footer {
@@ -20,10 +25,10 @@ header, footer {
 .logo {
     color: #363636;
     font-size:xx-large;
+    text-decoration: none;
 }
 
 a {
-    text-decoration: none;
     color: black;
 }
 
@@ -40,11 +45,8 @@ a {
 }
 
 .smalltext1{
-    font-size: 12px;
+    font-size: 14px;
 }
-
-
-
 
 
 
@@ -77,15 +79,135 @@ h1 {
     margin: 0px;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color1);
+    padding: 20px;
+}
+
+.navmenu {display: flex;}
+.navmenu li {padding-left: 30px;}
+.navmenu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color2);
+    text-align: center;
+    transition: 0.1s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.navmenu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    transition: 0.1s ease-in-out;
+    background-color: var(--color2);
+
+}
+
+
+.navmenu li a:hover:after { width: 100%;}
+
+.open , .closed {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    text-decoration: underline;
+}
+
+.open{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.closed {
+    top: 10px;
+    right: 20px;
+}
+
+#burgermenu {
+    display: none;
+}
+@media (max-width: 810px) {
+    .navmenu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #FFFFFF;
+        transition: all 0.2s ease-in-out ;
+        box-shadow: 100px -40px 60px 60px rgba(206, 0, 100, 0.68);
+
+    }
+    .navmenu li {margin-top: 20px;}
+    .navmenu li a {padding:10px}
+    .open , .closed {display: block;}
+    #burgermenu:checked ~.navmenu {right: 0; }
+}
+
+@media (max-width: 600px) {
+    .navmenu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #FFFFFF;
+        transition: all 0.s ease-in-out ;
+
+    }
+    .navmenu li {margin-top: 0px;}
+    .navmenu li a {padding: 10px}
+    .open , .closed {display: block;}
+    #burgermenu:checked ~.navmenu {right: 0; }
+}
 
 
 
 
+
+.headerlight {
+    font-weight: 100;
+}
+.headerlight2 {
+    font-weight: 400;
+}
 
 
 
 
 /*Footer specific*/
+
+.clicktext {
+    font-size: 15px;
+    color: #57002F;
+    font-weight: 600;
+}
 
 .footeralign {
     text-align: center;
@@ -93,16 +215,24 @@ h1 {
 
 .footericons {
     color: #770040;
+    font-size: 30px;
+    
 }
 .footertext {
     color: #770040;
+    font-size: 18px;
 }
 
 .flexfooter {
     display: flex;
     flex-direction: row;
-    
+}
 
+@media (min-width: 300px) and (max-width: 880px) {
+    .flexfooter {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .flexfootertext {
@@ -116,6 +246,22 @@ margin: 30px;
     text-align: center;
 }
 
+.footertext1 {
+    font-size: 13px;
+}
+
+.footericongap {
+    padding: 20px;
+}
+
+.footericongap1 {
+    padding-right: 10px;
+}
+
+
+
+
+
 
 
 
@@ -124,12 +270,43 @@ margin: 30px;
 
 /*Home page*/
 
+.greenshadow2 {
+    box-shadow: -15px -10px 8px -8px rgba(85, 188, 0, 0.56);
+    
+}
+
+.purplehadow1 {
+    box-shadow: -15px -10px 8px -8px rgba(39, 2, 33, 0.65);
+}
+
+
+@media (min-width: 200px) and (max-width: 850px) {
+    .purpleshadow3 {
+        box-shadow: -15px -10px 8px -8px rgba(255, 62, 236, 0.56);
+
+    }
+    .greentexthp {
+        background-color: white;
+
+    }
+}
+
 .flexbox1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 
+}
+
+@media (min-width: 300px) and (max-width: 1220px) {
+    .flexbox1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    
+    }
 }
 
 .flextext1 {
@@ -144,18 +321,22 @@ min-width: 400px;
  flex-flow: row;
 }
 
+
+
 .flextext2 {
     flex: 1;
     margin: 20px;
 }
 
 .vrpic {
-    background-image: url("../images/billetto-editorial-334686.jpg");
+    background-image: url("../images/resized/billetto-editorial-334686\ copy-min.jpg");
     min-height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
     background-position-y: top;
+    
+    
 }
 
 .labpic {
@@ -165,6 +346,7 @@ min-width: 400px;
     background-size: cover;
     background-position: center;
     margin:0px;
+    box-shadow: -10px -5px 5px -20px rgb(52, 0, 30);
 }
 
 
@@ -190,6 +372,7 @@ min-width: 400px;
     text-transform: uppercase;
     text-align: center;
     justify-content: space-around;
+    box-shadow: -15px -10px 8px -8px rgba(85, 188, 0, 0.56);
 }
 
 .HPMAIN2 {
@@ -204,6 +387,41 @@ min-width: 400px;
     bottom: 65%;
 }
 
+@media (min-width: 300px) and (max-width: 850px) {
+    .flexbox2hp {
+        flex-flow: column;
+    }
+
+    .flextext1 {
+        flex: 1;
+        align-items: center;
+        min-width: 300px;
+        font-size: 13px;
+        padding: 5px;
+        }
+
+        .Pictectposition {
+            position: absolute;
+            left: 2%;
+            bottom: 65%;
+        }
+
+        .smalltexthp {
+            display: block;
+        }
+        
+        .bigtexthp {
+            display: none;
+        }
+        
+        
+}
+
+.smalltexthp {
+    display: none;
+}
+
+
 
 
 
@@ -214,6 +432,14 @@ min-width: 400px;
 
 
 /* Explore exhibitions Page*/
+
+.fontsize {
+    font-size: 22px;
+}
+
+.yellowshadow1 {
+    box-shadow: -20x -20px -20px -20px rgb(137, 96, 34);
+}
 
 .backgroundexp {
     background-color: #B59115;
@@ -226,7 +452,6 @@ min-width: 400px;
     margin: 0%;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 25px; 
 }
 
 .cosmopic {
@@ -238,16 +463,18 @@ min-width: 400px;
 }
 
 .headpic {
+    width: 60vh;
     max-height: 22vh;
-    min-width: 60vh;
+    min-width: 45vh;
     border-radius: 5px;
     object-fit: cover;
     padding: 10px;
 }
 
 .skeletonpic {
+    width: 60vh;
     max-height: 22vh;
-    min-width: 60vh;
+    min-width: 45vh;
     border-radius: 5px;
     object-fit: cover;
     padding: 10px;
@@ -283,19 +510,21 @@ min-width: 400px;
 }
 
 .expbioandevo {
-    background-color: #B59115;
+    background-color: #a47e00;
     color: white;
     display: flex;
     justify-content: space-around;
     gap: 30px;
+    box-shadow: -1px -20px 30px -25px rgba(255, 0, 136, 0.661);
 }
 
 .expcosmo {
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     padding: 20px;
+    box-shadow: -10px -1px 50px -10px rgb(255, 255, 255);
 }
 
 .cosmoheader {
@@ -343,6 +572,23 @@ min-width: 400px;
     margin: 20px;
 }
 
+@media (max-width: 600px) {
+    .expbioandevo {
+        background-color: #B59115;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -374,14 +620,14 @@ min-width: 400px;
 
 
 .boxwidth {
-    width: 900px;
+    max-width: 900px;
     margin: 10px;
     text-align: center;
 }
 
 
 .eventbackground {
-    background-color: #490028;
+    background-color: #2d0018;
     color: white;
 }
 
@@ -393,24 +639,24 @@ min-width: 400px;
 }
 
 .Aeropic {
+    width: 60px;
     max-height: 20vh;
-    min-width: 60vh;
-    border-radius: 20px;
+    min-width: 45vh;
+    border-radius: 5px;
     object-fit: cover;
-    margin-left: 50px;
 }
 
 .Energeticapic {
+    width: 60px;
     max-height: 20vh;
-    min-width: 60vh;
-    border-radius: 20px;
+    min-width: 45vh;
+    border-radius: 5px;
     object-fit: cover;
-    margin-left: 50px;
 }
 
 .nightmuseumpic {
     max-height: 60vh;
-    min-width: 40vh;
+    min-width: 45vh;
     border-radius: 20px;
     object-fit: cover;
     margin-left: 50px;
@@ -423,7 +669,7 @@ min-width: 400px;
 
 
 .container {
-    width: 900px;
+    max-width: 900px;
     height: 400px;
     position: relative;
     margin: 20px 20px 240px auto;
@@ -459,6 +705,44 @@ min-width: 400px;
     text-align: left;
 }
 
+@media (max-width: 600px) {
+    .container img {
+        width: auto;
+        Height: 400px;
+        border-radius: 5px;
+    
+    }
+
+    .textpositioning {
+        color: #FFFFFF;
+        font-size: 11px;
+        position: absolute;
+        top: 130%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        width: 340px;
+        
+    
+    }
+    
+}
+
+
+@media (min-width: 921px) and (max-width: 1839px) {
+    .container {
+        max-width: 900px;
+        height: 400px;
+        position: relative;
+        margin: 20px 20px 240px auto;
+        width: 1000px;
+    
+    }
+}
+
+
+
+
+
 
 
 
@@ -470,11 +754,25 @@ min-width: 400px;
 
 /* Get incvolved page */
 
+.yellowshadow {
+    box-shadow: -10px -1px 5px -5px rgba(137, 96, 34, 0.522);
+}
+
+.purpleshadow {
+    box-shadow: -10px -1px 5px -5px rgba(52, 0, 30, 0.47);
+    
+}
+
+.greenshadow {
+    box-shadow: -10px -1px 5px -5px rgba(27, 51, 25, 0.507);
+}
+
 .h1involved {
     margin: 0%;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 22px;
+    
 }
 
 .circlepic {
@@ -491,12 +789,14 @@ min-width: 400px;
 .headertextbox {
     margin: 0px;
     padding: 1px;
+    
+    
 }
 
 .subtextbox {
     margin: 0px;
     padding:30px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .smalltext {
@@ -509,7 +809,7 @@ min-width: 400px;
 }
 
 .volunteerbackground {
-    background-color: #B59115;
+    background-color: #a47e00;
 }
 
 .internshipbackground {
@@ -522,6 +822,7 @@ min-width: 400px;
     background-color: #004E37;
     color: white;
     text-align: center;
+    box-shadow: -5px 5px 5px rgb(27, 51, 25);
 }
 
 .supportbottext {
@@ -532,13 +833,14 @@ min-width: 400px;
 }
 
 .volunteertoptext {
-    background-color: #B59115;
+    background-color: #997600;
     color: white;
     text-align: center;
+    box-shadow: -5px 5px 5px rgb(137, 96, 34);
 }
 
 .volunteerbottext {
-    background-color: #B59115;
+    background-color: #a47e00;
     color: white;
     text-align: center;
     align-self: center;
@@ -548,6 +850,7 @@ min-width: 400px;
     background-color: #490028;
     color: white;
     text-align: center;
+    box-shadow: -5px 5px 5px rgb(52, 0, 30);
 }
 
 .internshipbottext {
@@ -564,6 +867,11 @@ min-width: 400px;
     background-color: #B59115;
 
 }
+
+
+
+
+
 
 
 
@@ -606,7 +914,6 @@ min-width: 400px;
 .formsizer {
     max-width: 600px;
     display: inline-block;
-    block-size: 430px;
 }
 
 .CTA-tickets {
@@ -626,6 +933,15 @@ input, textarea {
     border: #3C0020;
     border-radius: 5px;
 }
+
+form input {
+    padding: 5px 15px;
+}
+
+
+
+
+
 
 
 
