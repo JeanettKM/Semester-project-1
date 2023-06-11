@@ -10,11 +10,13 @@ Visit the live page here: https://poetic-faloodeh-916be2.netlify.app/
 
 ## Built With
 
-- HTML5
-- CSS3
-- <a href="https://www.figma.com/"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg>"> Figma </a>
+<img align="left" alt="HTML5" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"/>
+          
+<img align="left" alt="CSS3" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"/>
 
-## Getting Started
+<img align="left" alt="Wordpress" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"/>
+
+# Getting Started
 
 ### Installing
 
@@ -31,7 +33,8 @@ git clone https://github.com/JeanettKM/Semester-project-1.git
 
 ## Contact
 
-Jeanett Melsom - https://www.linkedin.com/in/jeanett-melsom-927ab4123/
+Jeanett Melsom - https://www.linkedin.com/in/jeanett-melsom-927ab4123/ 
+            <img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
 
 
 ## Acknowledgments
