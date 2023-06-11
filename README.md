@@ -6,6 +6,8 @@ Semester Project 1
 
 This is the semester project we were tasked with before our winter holiday. We were tasked to use the knowledge and experience we gathered trougout the first  semester to create a webpage for a museum for children.
 
+Visit the live page here: https://poetic-faloodeh-916be2.netlify.app/
+
 ## Built With
 
 - HTML5
