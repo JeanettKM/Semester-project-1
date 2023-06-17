@@ -39,6 +39,10 @@ If you want to contribute to the project then you are more than welcome to do so
 Jeanett Melsom - https://www.linkedin.com/in/jeanett-melsom-927ab4123/ 
             <img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
 
+## License
+
+No license required, you can clone this project if you want to. 
+
 
 ## Acknowledgments
 
