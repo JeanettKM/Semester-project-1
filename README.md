@@ -30,6 +30,9 @@ git clone https://github.com/JeanettKM/Semester-project-1.git
 
 2. Open the Zip File/Folder with your preferred Code editor.
 
+## Contributing
+
+If you want to contribute to the project then you are more than welcome to do so, make a pull request or contact me through the provided contact details in my profile. 
 
 ## Contact
 
