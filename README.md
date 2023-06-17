@@ -25,6 +25,9 @@ Visit the live page here: https://poetic-faloodeh-916be2.netlify.app/
 ```bash
 git clone https://github.com/JeanettKM/Semester-project-1.git
 ```
+### dependencies:
+The site depends on a Wordpress API instance.
+
 ### Running
 
 2. Open the Zip File/Folder with your preferred Code editor.
